@@ -3,24 +3,58 @@
  * created: 3/23/2026
  * Explanation:
  */
-package org.example;
+package org.Monsters;
+
+import Abilities.Attack;
 
 import java.util.HashMap;
 import java.util.Objects;
+import java.util.Random;
 
 public abstract class Monster {
 
-    public Monster(int maxHP, int xp, HashMap<String, Integer> items) {
+    public Monster(Integer maxHP, Integer xp, HashMap<String, Integer> items) {
         this.maxHP = maxHP;
         hp = this.maxHP;
         this.xp = xp;
         this.items = items;
     }
 
-    private int hp;
-    private int xp;
-    private int maxHP;
+    private Integer hp;
+    private Integer xp;
+    Integer agi;
+    Integer def;
+    Integer str;
+    Attack attack;
+    private Integer maxHP;
     private HashMap<String, Integer> items;
+
+    public Integer attackTarget(Monster monster) {
+        Integer damage = attack.attack(monster);
+
+        monster.takeDamage(damage);
+
+        return damage;
+    }
+
+    boolean takeDamage(Integer damage) {
+        if(damage > 0) {
+            hp = hp - damage;
+            System.out.println("The creature was hit for [" + damage + "] damage");
+        }
+
+        if(hp <= 0) {
+            System.out.println("Oh no! The creature has perished");
+        }
+
+        System.out.println(toString());
+
+        if(hp > 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     public void setHp(int hp) {
         this.hp = hp;
@@ -39,23 +73,41 @@ public abstract class Monster {
     }
 
     public int getHp() {
-        return 0;
+        return hp;
     }
 
     public int getXp() {
-        return 0;
+        return xp;
     }
 
     public HashMap<String, Integer> getItems() {
         return items;
     }
 
-    public void setItems(HashMap<String, Integer>) {
-
+    public int getMaxHP() {
+        return maxHP;
     }
 
-    public int getMaxHP() {
-        return 0;
+    public int getAgi() {
+        return agi;
+    }
+
+    public int getStr() {
+        return str;
+    }
+
+    public int getDef() {
+        return def;
+    }
+
+    Integer getAttribute(Integer min, Integer max){
+        Random rand = new Random();
+        if(min > max) {
+            Integer temp = min;
+            min = max;
+            max = temp;
+        }
+        return rand.nextInt(max-min) + min;
     }
 
     @Override
