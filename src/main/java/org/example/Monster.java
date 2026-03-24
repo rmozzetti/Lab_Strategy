@@ -76,11 +76,7 @@ public abstract class Monster {
 
     @Override
     public String toString() {
-        return "Monster{" +
-                "hp=" + hp +
-                ", xp=" + xp +
-                ", maxHP=" + maxHP +
-                ", items=" + items +
-                '}';
+        return "Imp has : hp=" + hp + "/" + hp +
+                "\n Kobold has : hp=" + hp + "/" + hp;
     }
 }
