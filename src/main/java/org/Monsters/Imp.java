@@ -23,6 +23,7 @@ public class Imp extends Monster {
         agi = super.getAttribute(agi, maxAgi);
     }
 
+    //Returns a string showing the hp and max HP of Imp
     @Override
     public String toString() {
         return "Imp has : " + super.toString();

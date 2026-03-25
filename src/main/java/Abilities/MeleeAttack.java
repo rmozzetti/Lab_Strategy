@@ -15,6 +15,7 @@ public class MeleeAttack implements Attack {
 
     Monster attacker;
 
+    //Returns the damage dealt by the attack calculated from the attackers strength - targets defense
     @Override
     public Integer attack(Monster target) {
         String message = attacker + " uses melee attack on " + target;

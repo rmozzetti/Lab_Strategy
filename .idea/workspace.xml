@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0020dd77-55b0-4a6c-9951-749c67bb621c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Abilities/Ability.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Abilities/Attack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Abilities/MeleeAttack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Abilities/RangedAttack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Monsters/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Monsters/Imp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Monsters/Kobold.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Monsters/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="0020dd77-55b0-4a6c-9951-749c67bb621c" name="Changes" comment="commit with completed instructions and correct output">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Imp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Monsters/Monster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Abilities/MeleeAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Abilities/MeleeAttack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Abilities/RangedAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Abilities/RangedAttack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Monsters/Imp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Monsters/Imp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Monsters/Kobold.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Monsters/Kobold.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Monsters/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Monsters/Monster.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,21 +38,21 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="melee-ranged" />
+        <entry key="$PROJECT_DIR$" value="monster" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {}
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/rmozzetti/Lab_Strategy.git",
-    "accountId": "4f73c149-ec86-4cc5-98eb-57dd6327b594"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/rmozzetti/Lab_Strategy.git&quot;,
+    &quot;accountId&quot;: &quot;4f73c149-ec86-4cc5-98eb-57dd6327b594&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -74,17 +67,24 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Lab_Strategy [:org.Monsters.Driver.main()].executor": "Run",
+    "Gradle.Lab_Strategy [:org.Monsters.Main.main()].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/rmozz/CS_Online/Lab_Strategy/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Driver">
     <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.Monsters.Driver" />
       <module name="Lab_Strategy.main" />
@@ -98,8 +98,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.Monsters.Main" />
+      <module name="Lab_Strategy.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.Monsters.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Driver" />
         <item itemvalue="Application.Driver" />
       </list>
     </recent_temporary>
@@ -108,6 +123,7 @@
     <attachedChunks>
       <set>
         <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.31033.145" />
       </set>
     </attachedChunks>
   </component>
@@ -119,7 +135,23 @@
       <option name="presentableId" value="Default" />
       <updated>1774348624024</updated>
     </task>
+    <task id="LOCAL-00001" summary="commit with completed instructions and correct output">
+      <option name="closed" value="true" />
+      <created>1774406156626</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1774406156626</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit with completed instructions and correct output" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit with completed instructions and correct output" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

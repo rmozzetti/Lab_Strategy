@@ -13,6 +13,7 @@ import java.util.Random;
 
 public abstract class Monster {
 
+    //Constrtuctor
     public Monster(Integer maxHP, Integer xp, HashMap<String, Integer> items) {
         this.maxHP = maxHP;
         hp = this.maxHP;
@@ -29,6 +30,7 @@ public abstract class Monster {
     private Integer maxHP;
     private HashMap<String, Integer> items;
 
+    //Method for calculating damage
     public Integer attackTarget(Monster monster) {
         Integer damage = attack.attack(monster);
 
@@ -37,6 +39,7 @@ public abstract class Monster {
         return damage;
     }
 
+    //Method for taking damage and printing if the monster has perished
     boolean takeDamage(Integer damage) {
         if(damage > 0) {
             hp = hp - damage;
@@ -56,6 +59,7 @@ public abstract class Monster {
         }
     }
 
+    //Getters and setters
     public void setHp(int hp) {
         this.hp = hp;
     }
@@ -100,6 +104,7 @@ public abstract class Monster {
         return def;
     }
 
+    //Method for randomly generating damage taken/dealt
     Integer getAttribute(Integer min, Integer max){
         Random rand = new Random();
         if(min > max) {
@@ -110,6 +115,7 @@ public abstract class Monster {
         return rand.nextInt(max-min) + min;
     }
 
+    //Equals and Hashcode
     @Override
     public final boolean equals(Object o) {
         if (!(o instanceof Monster monster)) return false;
@@ -126,6 +132,7 @@ public abstract class Monster {
         return result;
     }
 
+    //ToString that prints the current and max HP
     @Override
     public String toString() {
         return hp + "/" + maxHP;

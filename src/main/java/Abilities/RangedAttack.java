@@ -15,6 +15,7 @@ public class RangedAttack implements Attack {
 
     Monster attacker;
 
+    //Returns the damage dealt by the attack calculated from the attackers - targets agility
     @Override
     public Integer attack(Monster target) {
         String message = attacker + " uses ranged attack on " + target;

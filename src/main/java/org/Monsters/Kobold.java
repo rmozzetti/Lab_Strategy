@@ -23,6 +23,7 @@ public class Kobold extends Monster{
         agi = super.getAttribute(agi, maxAgi);
     }
 
+    //Returns a string showing the hp and max HP of Kobold
     @Override
     public String toString() {
         return "Kobold has : " + super.toString();
