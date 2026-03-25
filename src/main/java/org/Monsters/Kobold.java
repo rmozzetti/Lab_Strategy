@@ -1,7 +1,7 @@
 /**
  * @author Robert Mozzetti
  * created: 3/24/2026
- * Explanation:
+ * Explanation: Kobald class that holds stats for the Kobald monster
  */
 package org.Monsters;
 

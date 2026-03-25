@@ -1,7 +1,7 @@
 /**
  * @author Robert Mozzetti
  * created: 3/23/2026
- * Explanation:
+ * Explanation: Monster class that has methods for calculating damage, and basic attributes for the monsters
  */
 package org.Monsters;
 

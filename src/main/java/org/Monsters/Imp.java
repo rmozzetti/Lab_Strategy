@@ -1,7 +1,7 @@
 /**
  * @author Robert Mozzetti
  * created: 3/24/2026
- * Explanation:
+ * Explanation: Imp class that holds stats for the imp monster
  */
 package org.Monsters;
 

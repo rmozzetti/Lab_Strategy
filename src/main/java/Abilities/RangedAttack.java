@@ -1,7 +1,7 @@
 /**
  * @author Robert Mozzetti
  * created: 3/24/2026
- * Explanation:
+ * Explanation: Calculates damage taken from ranged attacks
  */
 package Abilities;
 
