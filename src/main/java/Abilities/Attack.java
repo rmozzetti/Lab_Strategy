@@ -4,6 +4,6 @@ import org.Monsters.Monster;
 
 public interface Attack extends Ability {
 
-     public Integer attack(Monster monster);
+     public abstract Integer attack(Monster monster);
 
 }

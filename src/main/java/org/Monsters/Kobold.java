@@ -11,7 +11,7 @@ import Abilities.RangedAttack;
 import java.util.HashMap;
 
 public class Kobold extends Monster{
-    public Kobold(int maxHP, int xp, HashMap<String, Integer> items) {
+    public Kobold(Integer maxHP, Integer xp, HashMap<String, Integer> items) {
         super(maxHP,xp,items);
         Integer maxStr = 15;
         Integer maxDef = 6;

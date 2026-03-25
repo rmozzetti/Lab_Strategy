@@ -21,10 +21,10 @@ public abstract class Monster {
     }
 
     private Integer hp;
-    private Integer xp;
-    Integer agi;
-    Integer def;
-    Integer str;
+    private Integer xp = 10;
+    Integer agi = 10;
+    Integer def = 10;
+    Integer str = 10;
     Attack attack;
     private Integer maxHP;
     private HashMap<String, Integer> items;
@@ -40,7 +40,7 @@ public abstract class Monster {
     boolean takeDamage(Integer damage) {
         if(damage > 0) {
             hp = hp - damage;
-            System.out.println("The creature was hit for [" + damage + "] damage");
+            System.out.println("The creature was hit for " + damage + " damage");
         }
 
         if(hp <= 0) {
@@ -128,7 +128,6 @@ public abstract class Monster {
 
     @Override
     public String toString() {
-        return "Imp has : hp=" + hp + "/" + hp +
-                "\n Kobold has : hp=" + hp + "/" + hp;
+        return hp + "/" + maxHP;
     }
 }

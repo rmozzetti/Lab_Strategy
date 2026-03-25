@@ -25,6 +25,6 @@ public class Imp extends Monster {
 
     @Override
     public String toString() {
-        return "Monsters.Imp has : " + super.toString();
+        return "Imp has : " + super.toString();
     }
 }
